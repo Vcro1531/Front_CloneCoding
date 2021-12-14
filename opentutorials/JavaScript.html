@@ -3,37 +3,66 @@
   <title>CloneCoding - JavaScript</title>
   <meta charset="utf-8" />
   <style>
+    body {
+      margin: 0;
+    }
     a {
       color: black;
       text-decoration: none;
     }
-    .saw {
-      color: gray;
-    }
-    #active {
-      color: rebeccapurple;
-    }
     h1 {
-      margin: 0%;
-      font-size: 60px;
+      font-size: 45px;
       text-align: center;
       border-bottom: 1px solid gray;
+      margin: 0;
       padding: 20px;
+    }
+    ol {
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol {
+      padding-left: 33px;
+    }
+    #grid #article {
+      padding-left: 25px;
+    }
+    @media (max-width: 800px) {
+      #grid {
+        display: block;
+      }
+      ol {
+        border-right: none;
+      }
+      h1 {
+        border-bottom: none;
+      }
     }
   </style>
 </head>
 <body>
   <h1><a href="index.html">Web</a></h1>
-  <ol>
-    <li><a href="HTML.html" class="saw">HTML </a></li>
-    <li><a href="CSS.html" class="saw">CSS </a></li>
-    <li><a href="JavaScript.html" id="active">JavaScript </a></li>
-  </ol>
-  <h3>JavaScript</h3>
-  <p>
-    자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다.<br />이 언어는 웹 브라우저 내에서 주로
-    사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다.<br />또한
-    Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.
-  </p>
+  <div id="grid">
+    <ol>
+      <li><a href="HTML.html">HTML </a></li>
+      <li><a href="CSS.html">CSS </a></li>
+      <li><a href="JavaScript.html">JavaScript </a></li>
+    </ol>
+    <div id="article">
+      <h3>JavaScript</h3>
+      <p>
+        자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다.<br />
+        이 언어는 웹 브라우저 내에서 주로 사용한다.<br />
+        다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다.<br />
+        또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.
+      </p>
+    </div>
+  </div>
   <img src="game_room.jpg" width="45%" />
 </body>
