@@ -2,10 +2,17 @@
   margin: 0%;
   padding: 0%;
   background-color: #10a3a4;
-  position: relative;
+}
+.firstscreen {
+  display: flex;
 }
 .white_logo {
   width: 3.4375rem;
   height: 3.4375rem;
   max-width: 100;
+}
+.header_name {
+  color: white;
+  margin-left: 3.125rem;
+  font-size: 1.875rem;
 }
