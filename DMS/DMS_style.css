@@ -2,10 +2,30 @@
 * {
   margin: 0%;
   padding: 0%;
-  background-color: black;
+}
+html {
+  font-size: 11.383px;
 }
 .root {
   width: 100%;
   height: 100vh;
   background-color: #10a3a4;
+}
+.meal_check {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+.inner_meal {
+  display: flex;
+  width: 75rem;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.meal_header {
+  height: 75rem;
+  width: 9.375rem;
+  justify-content: space-between;
 }
