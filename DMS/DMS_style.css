@@ -17,15 +17,11 @@ html {
   height: 100vh;
   justify-content: center;
 }
-.inner_meal {
+.in_meal {
   display: flex;
   width: 75rem;
   height: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.meal_header {
-  height: 75rem;
-  width: 9.375rem;
-  justify-content: space-between;
 }
