@@ -15,7 +15,7 @@ html {
   width: 100%;
   height: 100vh;
   justify-content: center;
-  background-color: #078f91;
+  background-image: linear-gradient(180deg, #078f91, #19b6b6);
 }
 .in_meal {
   display: flex;
