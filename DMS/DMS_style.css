@@ -31,11 +31,11 @@ html {
   height: 9.375rem;
   justify-content: space-between;
 }
-.white_logo-name {
+.header_logo-name {
   display: flex;
   align-items: center;
 }
-.header_logo-name {
+.header_logo {
   width: 3.4375rem;
   height: 3.4375rem;
 }
@@ -44,4 +44,7 @@ html {
   font-family: "NanumSquareEB", sans-serif;
   margin-left: 3.125rem;
   font-size: 1.875rem;
+}
+.hearder_right {
+  display: flex;
 }
