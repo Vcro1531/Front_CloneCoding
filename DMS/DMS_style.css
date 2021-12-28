@@ -9,19 +9,39 @@ html {
 .root {
   width: 100%;
   height: 100vh;
-  background-color: #10a3a4;
 }
 .meal_check {
   display: flex;
   width: 100%;
   height: 100vh;
   justify-content: center;
+  background-color: #078f91;
 }
 .in_meal {
   display: flex;
   width: 75rem;
   height: 100%;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+.meal_header {
+  display: flex;
+  align-items: center;
+  width: 75rem;
+  height: 9.375rem;
+  justify-content: space-between;
+}
+.white_logo-name {
+  display: flex;
+  align-items: center;
+}
+.header_logo-name {
+  width: 3.4375rem;
+  height: 3.4375rem;
+}
+.header_name {
+  color: white;
+  font-family: "NanumSquareEB", sans-serif;
+  margin-left: 3.125rem;
+  font-size: 1.875rem;
 }
