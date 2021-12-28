@@ -5,6 +5,7 @@
 }
 html {
   font-size: 11.383px;
+  font-family: "NanumSquareEB", sans-serif;
 }
 .root {
   width: 100%;
@@ -41,10 +42,28 @@ html {
 }
 .header_name {
   color: white;
-  font-family: "NanumSquareEB", sans-serif;
   margin-left: 3.125rem;
   font-size: 1.875rem;
 }
-.hearder_right {
+.header_list {
   display: flex;
+  height: 100%;
+  width: 38.375rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_button {
+  color: white;
+  text-decoration-line: none;
+}
+.header_login_button {
+  color: white;
+  width: 9.375rem;
+  height: 3.125rem;
+  border-radius: 1.5625rem;
+  background-color: #19b6b6;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
 }
