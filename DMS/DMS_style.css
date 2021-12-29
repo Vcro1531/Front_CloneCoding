@@ -67,3 +67,18 @@ html {
   font-size: 1rem;
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
 }
+.meal_box {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 9.375rem);
+  align-items: center;
+}
+.meal_box_right {
+  width: 27.375rem;
+  height: auto;
+}
+.meal_box_left {
+  width: 45.75rem;
+  height: 35.0625rem;
+  flex-direction: column;
+}
