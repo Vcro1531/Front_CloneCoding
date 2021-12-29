@@ -82,3 +82,8 @@ html {
   height: 35.0625rem;
   flex-direction: column;
 }
+.meal_box_head {
+  display: flex;
+  height: 6.125rem;
+  width: 100%;
+}
