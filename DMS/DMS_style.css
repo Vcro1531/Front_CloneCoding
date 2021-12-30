@@ -83,7 +83,15 @@ html {
   flex-direction: column;
 }
 .meal_box_head {
-  display: flex;
+  display: block;
   height: 6.125rem;
   width: 100%;
+}
+.meal_box_header_title {
+  color: white;
+  font-size: 3rem;
+}
+.meal_box_header_date {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 1.5rem;
 }
