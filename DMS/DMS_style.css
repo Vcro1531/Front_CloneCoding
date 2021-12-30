@@ -81,11 +81,14 @@ html {
   width: 45.75rem;
   height: 35.0625rem;
   flex-direction: column;
+  justify-content: space-between;
 }
 .meal_box_head {
-  display: block;
+  display: flex;
   height: 6.125rem;
   width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .meal_box_header_title {
   color: white;
