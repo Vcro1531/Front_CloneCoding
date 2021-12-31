@@ -83,6 +83,7 @@ html {
   height: 35.0625rem;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: auto;
 }
 .meal_box_head {
   display: flex;
@@ -100,4 +101,35 @@ html {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.5rem;
   font-family: "NanumSquareB", sans-serif;
+}
+.meal_box_mid {
+  display: flex;
+  width: 100%;
+  height: 23.875rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.meal_box_card {
+  width: 13.7rem;
+  height: 19.75rem;
+  background-color: rgb(12, 151, 153);
+  border-radius: 10px;
+  position: relative;
+}
+.meal_box_button {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+}
+.date_change_button {
+  background-color: white;
+  color: #19b6b6;
+  height: 3.125rem;
+  width: 9.375rem;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  margin-right: 2.5rem;
+  font-family: "NanumSquareEB", sans-serif;
 }
