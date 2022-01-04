@@ -118,7 +118,7 @@ html {
   background-color: rgb(12, 151, 153);
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 5px 5px 0;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
 }
 .meal_box_button {
   display: flex;
