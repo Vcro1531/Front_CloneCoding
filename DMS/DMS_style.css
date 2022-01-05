@@ -112,7 +112,7 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-.meal_box_card {
+.meal_card {
   width: 13.7rem;
   height: 19.75rem;
   background-color: rgb(12, 151, 153);
@@ -136,4 +136,15 @@ html {
   outline: 0;
   margin-right: 2.5rem;
   font-family: "NanumSquareEB", sans-serif;
+}
+.meal_card_header {
+  color: white;
+  font-family: "NanumSquareEB", sans-serif;
+  font-size: 1.5rem;
+  top: 10%;
+}
+.meal_card_body {
+  display: flex;
+  font-family: "NanumSquareEB", sans-serif;
+  color: white;
 }
