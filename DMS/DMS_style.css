@@ -146,7 +146,20 @@ html {
   padding-bottom: 0.3rem;
 }
 .meal_card_body {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 25%;
   display: flex;
+  font-size: 1.25rem;
   font-family: "NanumSquareEB", sans-serif;
   color: white;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
