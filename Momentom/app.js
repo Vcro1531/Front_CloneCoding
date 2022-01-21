@@ -1,8 +1,6 @@
 const player = {
   name: "test",
-  sayHello: function (otherPersonsName) {
-    console.log("Hello " + otherPersonsName + " nice to meet you");
-  },
+  age: 05,
 };
 
-player.sayHello("OwO");
+console.log(player, console);
