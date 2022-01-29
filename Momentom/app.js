@@ -1,6 +1,3 @@
-const player = {
-  name: "test",
-  age: 05,
-};
+const age = parseInt(prompt("How old are you?"));
 
-console.log(player, console);
+console.log(age);
