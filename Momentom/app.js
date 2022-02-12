@@ -6,10 +6,10 @@ const HIDDEN_CLASSNAME = "hidden";
 
 function onLoginSubmit(event) {
   event.preventDefault();
-  loginForm.classList.add("hidden");
+  loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   greeting.innerText = `hello ${username}`;
-  greeting.classList.remove("hidden");
+  greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
