@@ -12,12 +12,13 @@ function saveToDos() {
 
 function deleteToDo(event) {
   const li = event.target.parentElement;
+  toDos = toDos.filter((todo) => todo.id !== li.id);
   li.remove();
 }
 
 function paintToDo(newTodo) {
   const li = document.createElement("li");
-  li.id = newtodo.id;
+  li.id = newTodo.id;
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   const button = document.createElement("button");
