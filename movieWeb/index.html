@@ -5,18 +5,21 @@
     </body>
     <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-    <script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
         const root = document.getElementById("root");
-        const h3 = React.createElement("h3", { id: "title", onMouseEnter: () => console.log("mouse enter") }, "Hello, I'm a title");
-        const btn = React.createElement(
-            "button",
-            {
-                onClick: () => console.log("I'm clicked"),
-                style: { backgroundColor: "tomato" },
-            },
-            "Clicked"
+        const Title = (
+            <h1 id="title" onMouseEnter={() => console.log("mouse enter")}>
+                SampleText
+            </h1>
         );
-        const container = React.createElement("div", null, [h3, btn]);
+        const btn = (
+            <button id="button" style={{ backgroundColor: "tomato" }} onClick={() => console.log("I'm clicked")}>
+                Clicked
+            </button>
+        );
+        const container = React.createElement("div", null, [Title, btn]);
 
         ReactDOM.render(container, root);
     </script>
