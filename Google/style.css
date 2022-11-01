@@ -36,7 +36,9 @@
 
 .middle {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -44,14 +46,12 @@
     height: auto;
 }
 
-.searchgroup {
-    display: flex;
-}
-
 .searchlogo {
     width: 20px;
     height: auto;
     filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 255, 255));
+    align-items: center;
+    margin-left: 10px;
 }
 
 .searchframe {
@@ -59,6 +59,18 @@
     border-radius: 100px;
     width: 584px;
     height: 45px;
+    display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.textbox {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    color: white;
+    outline: none;
+    width: 403px;
+    height: 34px;
+    font-size: 16px;
 }
