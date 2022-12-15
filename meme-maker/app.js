@@ -51,10 +51,10 @@ function onColorClick(event) {
 function onModeClick() {
   if (isFilling) {
     isFilling = false;
-    modeBtn.innerText = "Fill";
+    modeBtn.innerText = "🪣 채우기";
   } else {
     isFilling = true;
-    modeBtn.innerText = "Draw";
+    modeBtn.innerText = "✏️ 그리기";
   }
 }
 function onCanvasClick() {
@@ -95,7 +95,7 @@ function onSaveClick() {
   const url = canvas.toDataURL();
   const a = document.createElement("a");
   a.href = url;
-  a.download = "myDrawing.png";
+  a.download = "MemeMaker.png";
   a.click;
 }
 
