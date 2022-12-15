@@ -51,10 +51,10 @@ function onColorClick(event) {
 function onModeClick() {
   if (isFilling) {
     isFilling = false;
-    modeBtn.innerText = "🪣 채우기";
+    modeBtn.innerText = "Fill";
   } else {
     isFilling = true;
-    modeBtn.innerText = "✏️ 그리기";
+    modeBtn.innerText = "Draw";
   }
 }
 function onCanvasClick() {
@@ -63,8 +63,10 @@ function onCanvasClick() {
   }
 }
 function onDestroyClick() {
-  ctx.fillStyle = "white";
-  ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  if (confirm("You want clear?")) {
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  }
 }
 function onEraseClick() {
   ctx.strokeStyle = "white";
@@ -107,9 +109,7 @@ canvas.addEventListener("mouseleave", canclePainting);
 canvas.addEventListener("click", onCanvasClick);
 lineWidth.addEventListener("change", onLineWidthChange);
 color.addEventListener("change", onColorChange);
-
 colorOptions.forEach((color) => color.addEventListener("click", onColorClick));
-
 modeBtn.addEventListener("click", onModeClick);
 destroyBtn.addEventListener("click", onDestroyClick);
 eraseBtn.addEventListener("click", onEraseClick);
