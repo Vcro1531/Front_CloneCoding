@@ -33,9 +33,34 @@
         </div>
       );
     }
+
     function KmToMiles() {
-      return <h3>Km To Miles</h3>;
+      const [distance, setDistance] = React.useState("0");
+      const [inverted, setInverted] = React.useState(false);
+      const onChange = (event) => {
+        setDistance(event.target.value);
+      };
+      const reset = () => setDistance(0);
+      const onInvert = () => {
+        reset();
+        setInverted((current) => !current);
+      };
+      return (
+        <div>
+          <div>
+            <label htmlFor="km">Kilometers</label>
+            <input value={inverted ? Math.round(distance * 1.6) : distance} placeholder="Kilometers" type="number" id="km" onChange={onChange} disabled={inverted} />
+          </div>
+          <div>
+            <label htmlFor="miles">Miles</label>
+            <input value={inverted ? distance : Math.round(distance * 0.6)} placeholder="Miles" type="number" id="miles" onChange={onChange} disabled={!inverted} />
+          </div>
+          <button onClick={reset}>Reset</button>
+          <button onClick={onInvert}>{inverted ? "Turn back" : "Invert"}</button>
+        </div>
+      );
     }
+
     function App() {
       const [index, setIndex] = React.useState("x");
       const onSelect = (event) => {
@@ -50,6 +75,7 @@
             <option value="1">Km & Miles</option>
           </select>
           <hr />
+          {index === "x" ? "Please select your units" : null}
           {index === "0" ? <MinutesToHours /> : null}
           {index === "1" ? <KmToMiles /> : null}
         </div>
