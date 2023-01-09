@@ -3,6 +3,11 @@
   <body>
     <div id="root"></div>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.7.2/prop-types.min.js"
+    integrity="sha512-ssNhh7jlzc+K93ckIlSXFHHz6fSFv0l619WOv8xbFNRbFOujbasb42LVMOggDrQR1ScJncoWb+KAJx1uF3ipjw=="
+    crossorigin="anonymous"
+  ></script>
   <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -11,8 +16,8 @@
       return (
         <button
           style={{
-            color: "white",
             backgroundColor: "tomato",
+            color: "white",
             padding: "10px 20px",
             border: 0,
             borderRadius: 10,
@@ -23,7 +28,7 @@
         </button>
       );
     }
-    Btn.PropTypes = {
+    Btn.propTypes = {
       text: PropTypes.string.isRequired,
       fontSize: PropTypes.number,
     };
@@ -31,7 +36,7 @@
       return (
         <div>
           <Btn text="Save Change" fontSize={18} />
-          <Btn fontSize={14} text={"Continue"} />
+          <Btn text={"Continue"} />
         </div>
       );
     }
