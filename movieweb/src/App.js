@@ -15,6 +15,7 @@ function App() {
   console.log(toDos);
   return (
     <div>
+      <h1>My To Dos ({toDos.length})</h1>
       <form onSubmit={onSubmit}>
         <input onChange={onChange} type="text" placeholder="write your to do.." />
         <button>Add To Do</button>
