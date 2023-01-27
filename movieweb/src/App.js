@@ -8,7 +8,7 @@ function App() {
       .then((response) => response.json())
       .then((json) => console.log(json));
   }, []);
-  return <div>{loading ? <h3>Loading...</h3> : null}</div>;
+  return <div>{loading ? <h3>Loading..</h3> : null}</div>;
 }
 
 export default App;
