@@ -22,7 +22,15 @@ function App() {
       ) : (
         <div>
           {movies.map((movie) => (
-            <div key={movie.id}>{movie.title}</div>
+            <div key={movie.id}>
+              <h1>{movie.title}</h1>
+              <p>{movie.summary}</p>
+              <ul>
+                {movie.genres.map((genre) => (
+                  <li key={genre}>{genre}</li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
       )}
