@@ -27,8 +27,8 @@ function App() {
               <h1>{movie.title}</h1>
               <p>{movie.summary}</p>
               <ul>
-                {movie.genres.map((g) => (
-                  <li key={g}>{g}</li>
+                {movie.genres.map((genre) => (
+                  <li key={genre}>{genre}</li>
                 ))}
               </ul>
             </div>
