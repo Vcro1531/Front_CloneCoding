@@ -10,6 +10,6 @@ function Detail() {
   useEffect(() => {
     getMovie();
   }, []);
-  return <h1>Detail</h1>;
+  return <h1>아직 개발 안됨</h1>;
 }
 export default Detail;
